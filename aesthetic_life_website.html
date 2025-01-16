@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Life</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Font */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f5f2;
+            color: #4b3c31;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #c8a2a2;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #4b3c31;
+            animation: titleAnimation 2s ease-in-out infinite;
+        }
+
+        @keyframes titleAnimation {
+            0% { transform: scale(1); color: #4b3c31; }
+            50% { transform: scale(1.1); color: #a58d75; }
+            100% { transform: scale(1); color: #4b3c31; }
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #d1bfa7;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #4b3c31;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            background-color: #a58d75;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Main Section */
+        section {
+            padding: 40px;
+            margin: 20px;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Blog Section */
+        .blog-posts {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .post {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .post:hover {
+            transform: scale(1.05);
+        }
+
+        .post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .post h3 {
+            margin-top: 10px;
+            font-size: 1.8em;
+            color: #4b3c31;
+        }
+
+        .post p {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #4b3c31;
+        }
+
+        /* Affiliate Links Section */
+        .affiliate-links {
+            background-color: #e8e0c9;
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .affiliate-links h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .affiliate-links a {
+            color: #4b3c31;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border: 2px solid #4b3c31;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .affiliate-links a:hover {
+            background-color: #a58d75;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4b3c31;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .blog-posts {
+                flex-direction: column;
+            }
+
+            .post {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Aesthetic Life</h1>
+        <p>Live life with style, simplicity, and beauty</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+        <h2>Welcome to Aesthetic Life</h2>
+        <p>Here, we embrace minimalist design, rich textures, and a refined lifestyle. Dive into our curated content on living beautifully in all aspects—design, home, and personal style.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section>
+        <h2>Our Latest Blog Posts</h2>
+        <div class="blog-posts">
+            <div class="post">
+                <img src="https://via.placeholder.com/400x200" alt="Post Image">
+                <h3>Creating a Minimalist Home</h3>
+                <p>Discover how to create a serene living space with minimalist principles and neutral tones...</p>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/400x200" alt="Post Image">
+                <h3>Simple Living: A Guide to the Aesthetic Life</h3>
+                <p>In this post, we explore how simplifying your life can bring about peace and balance...</p>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/400x200" alt="Post Image">
+                <h3>Fashion Trends for the Aesthetic Mind</h3>
+                <p>Find out how to incorporate modern and timeless fashion elements into your wardrobe...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Affiliate Links Section -->
+    <section class="affiliate-links">
+        <h2>Shop Our Favorite Products</h2>
+        <p>Check out these curated items that perfectly align with the aesthetic life.</p>
+        <div>
+            <a href="#">Affiliate Product 1</a>
+            <a href="#">Affiliate Product 2</a>
+            <a href="#">Affiliate Product 3</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aesthetic Life. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
